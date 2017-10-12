@@ -14,8 +14,15 @@ $ sudo npm install -g blockchain-sweep
 
 ## Usage
 
+```
+Options:
+
+    -p, --pubkey [value]    Encoded Public key
+    -r, --range <a>..<b>    Index range to check (default 0..100)
+```
+
 ```bash
-$ sweep xpub6AHA9hZDN11...
+$ sweep -p xpub6AHA9hZDN11...
 1950 '1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX' 0.0531
 # this indicates that we have one address with funds at index 1950
 ```

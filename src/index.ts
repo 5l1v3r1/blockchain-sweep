@@ -2,8 +2,26 @@
 
 import * as bitcore from "bitcore";
 import { Insight } from "bitcore-explorers";
+import * as commander from "commander";
 
-const encodedXPub = "";
+function parseRange(val: string) {
+    return val.split("..").map(Number);
+}
+
+commander
+    .option("-p, --pubkey [value]", "Encoded Public Key")
+    .option("-r, --range <a>..<b>", "Range", "0..100")
+    .parse(process.argv);
+
+const pubKey = commander.pubkey;
+const range = parseRange(commander.range);
+const min = range[0];
+const max = range[1];
+
+if (!pubKey) {
+    commander.outputHelp();
+    process.exit(-1);
+}
 
 interface Address {
     index: number;
@@ -47,11 +65,11 @@ class Wallet {
     }
 }
 
-const wallet = new Wallet(encodedXPub);
+const wallet = new Wallet(pubKey);
 
 // Collect all addresses from this xpub
 let addresses: Address[] = [];
-for (let index = 0; index < 200; index++) {
+for (let index = min; index <= max; index++) {
     for (let address of wallet.getAddresses(index)) {
         addresses.push(address);
     }
