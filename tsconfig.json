@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "outDir": "bin/",
+        "module": "commonjs"
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}
