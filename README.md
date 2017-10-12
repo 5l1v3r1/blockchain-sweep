@@ -1,5 +1,8 @@
 # blockchain-sweep
 
+[![NPM Version](http://img.shields.io/npm/v/blockchain-sweep.svg?style=flat)](https://www.npmjs.org/package/blockchain-sweep)
+[![NPM Downloads](https://img.shields.io/npm/dm/blockchain-sweep.svg?style=flat)](https://www.npmjs.org/package/blockchain-sweep)
+
 Since the [Blockchain Receive Payments API](https://blockchain.info/api/api_receive) follows the BIP44 standard, which means that 20 addresses generated through that service with no payments received will block continued usage of the service, and you will have a really hard time recovering these funds.
 
 The Blockchain support is really helpful with assisting users to recover their stuck funds, but they refuse to release their scripts that scans your xPub and finds the indexes of the stuck addresses.
