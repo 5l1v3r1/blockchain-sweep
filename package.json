@@ -1,5 +1,5 @@
 {
-  "name": "blockchain-bip44-recovery",
+  "name": "blockchain-sweep",
   "version": "1.0.0",
   "description": "Recover stuck addresses that wont show up in your wallet",
   "main": "./bin/index.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redpois0n/blockchain-bip44-recovery.git"
+    "url": "git+https://github.com/redpois0n/blockchain-sweep.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redpois0n/blockchain-bip44-recovery/issues"
+    "url": "https://github.com/redpois0n/blockchain-sweep/issues"
   },
-  "homepage": "https://github.com/redpois0n/blockchain-bip44-recovery#readme",
+  "homepage": "https://github.com/redpois0n/blockchain-sweep#readme",
   "bin": {
     "sweep": "./bin/index.js"
   },
   "dependencies": {
-    "bitcore-explorers": "^0.9.0",
-    "bitcore": "^0.9.0"
+    "bitcore": "^0.9.0",
+    "bitcore-explorers": "^0.9.0"
   }
 }
