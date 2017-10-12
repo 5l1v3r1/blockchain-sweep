@@ -1,22 +1,26 @@
 {
-    "name": "blockchain-bip44-recovery",
-    "version": "1.0.0",
-    "description": "Recover stuck addresses that wont show up in your wallet",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/redpois0n/blockchain-bip44-recovery.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/redpois0n/blockchain-bip44-recovery/issues"
-    },
-    "homepage": "https://github.com/redpois0n/blockchain-bip44-recovery#readme",
-    "bin": {
-        "xpub": "./bin/index.js"
-    }
+  "name": "blockchain-bip44-recovery",
+  "version": "1.0.0",
+  "description": "Recover stuck addresses that wont show up in your wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redpois0n/blockchain-bip44-recovery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redpois0n/blockchain-bip44-recovery/issues"
+  },
+  "homepage": "https://github.com/redpois0n/blockchain-bip44-recovery#readme",
+  "bin": {
+    "xpub": "./bin/index.js"
+  },
+  "dependencies": {
+    "bitcore-explorers": "^0.9.0",
+    "bitcore": "^0.9.0"
+  }
 }

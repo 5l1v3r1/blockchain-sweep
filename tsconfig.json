@@ -2,7 +2,8 @@
     "compilerOptions": {
         "target": "es2017",
         "outDir": "bin/",
-        "module": "commonjs"
+        "module": "commonjs",
+        "removeComments": true
     },
     "include": [
         "src/**/*.ts"
