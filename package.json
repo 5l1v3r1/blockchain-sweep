@@ -1,6 +1,6 @@
 {
   "name": "blockchain-sweep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Recover stuck addresses that wont show up in your wallet",
   "main": "./bin/index.js",
   "scripts": {
